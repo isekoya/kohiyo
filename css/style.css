@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5;
+    color:#000;
+    letter-spacing: 0.1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+/* HEADER
+------------------------ */
+
+header {
+    color: #442611;
+    font-family: "Sigmar", sans-serif;
+    text-align: center;
+    height: 80px;
+}
+
+header h1 {
+    padding-top: 15px;
+}
+
+/* HOME
+------------------------ */
+
+.home-content {
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 388px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Sigmar", sans-serif;
+}
+
+.home-content h1 {
+    color: #442611;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 90px;
+    right: 17%;
+}
+
+.self-introduction {
+    width: 100%;
+    text-align: center;
+    height: 550px;
+}
+
+.self-introduction img {
+    margin-top: 50px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.photo-shot {
+    padding: 0 20px 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #F9F5EF;
+}
+
+h2 {
+    padding: 60px 0 35px;
+    color: #442611;
+    font-size: 2.188rem;
+    font-family: "Sigmar", sans-serif;
+    text-align: center;
+}
+
+.siblings {
+    display: flex;
+    justify-content: center;
+}
+
+.siblings img {
+    width: 490px;
+    height: auto;
+}
+
+.siblings-text {
+    width: 490px;
+    height: 304px;
+    background-color: #fff;
+    padding: 60px;
+}
+
+.single {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.single-text {
+    width: 490px;
+    height: 304px;
+    background-color: #fff;
+    padding: 60px;
+}
+
+.single img {
+    width: 490px;
+    height: auto;
+}
+
+.family {
+    background-color: #fff;
+}
+
+.familymember {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 726px;
+    margin: 0 auto;
+}
+
+.member {
+    margin: 0 5% 50px;
+}
+
+.member img {
+    width: auto;
+    height: 209px;
+}
+
+.member p{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.member span{
+    font-size: 0.875rem;
+}
+
+/* FOOTER
+------------------------ */
+
+footer {
+    background-color: #644025;
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* スマホ向け（画面幅が600px以下） */
+@media (max-width: 600px) {
+    header {
+        height: 64px;
+        font-size: 0.813rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        padding-top: 17px;
+    }
+
+    .home-content {
+        background-image: url(../images/sumahomain.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 546px;
+        width: 100%;
+        font-size: 2rem;
+        font-family: "Sigmar", sans-serif;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+        justify-content: center;
+        top: 25px;
+        right: 0;
+    }
+
+    .self-introduction {
+        height: 513px;
+    }
+
+    .self-introduction img{
+        width: auto;
+        height: 210px;
+    }
+
+    .self-introduction p {
+        width: 70vw;
+        margin: 0 auto 0px;
+        padding-top: 20px;
+    }
+
+    .photo-shot {
+        padding-bottom: 80px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        padding: 50px 0 30px;
+    }
+
+    .siblings, .single {
+        flex-direction: column;
+    }
+
+    .siblings img, .single img {
+        width: 100%;
+        height: auto;
+    }
+
+    .siblings-text, .single-text {
+        width: 100%;
+        height: 218px;
+        font-size: 0.875rem;
+        font-weight: 545;
+        padding: 3vh 0 0;
+    }
+
+    .single {
+        padding: 35px 0 0;
+    }
+
+    .single-text {
+        order: 1;
+    }
+
+    .familymember {
+        width: 100%;
+    }
+
+    .member {
+        margin: 0 5vw 10px;
+    }
+
+    .member img {
+        width: auto;
+        height: 171px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+        
+}
+
+/* タブレット向け（画面幅が601pxから900px） */
+@media (min-width: 601px) and (max-width: 900px) {
+    .home-content h1 {
+        font-size: 3rem;
+        top: 100px;
+        right: 7vw;
+    }
+
+    p {
+        margin-bottom: 1vh;
+    }
+    
+    .siblings img, .single img {
+        width: 50%;
+    }
+    
+    .siblings-text, .single-text {
+        width: 490px;
+        height: 304px;
+        padding: 8vh 0;
+    }
+
+    .familymember {
+        width: 100%;
+    }
+    
+    .member {
+        margin: 0 5vw 50px;
+    }
+    
+    .member img {
+        width: auto;
+        height: 209px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
